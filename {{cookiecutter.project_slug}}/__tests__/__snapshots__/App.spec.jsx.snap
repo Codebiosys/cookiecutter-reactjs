@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The App renders 1`] = `
+<ApolloProvider
+  client={
+    ApolloClient {
+      "addTypename": true,
+      "dataId": [Function],
+      "dataIdFromObject": [Function],
+      "disableNetworkFetches": false,
+      "fieldWithArgs": [Function],
+      "fragmentMatcher": HeuristicFragmentMatcher {},
+      "initialState": Object {},
+      "middleware": [Function],
+      "mutate": [Function],
+      "networkInterface": HTTPFetchNetworkInterface {
+        "_afterwares": Array [],
+        "_middlewares": Array [],
+        "_opts": Object {},
+        "_uri": "http://:4000/graphql",
+      },
+      "query": [Function],
+      "queryDeduplication": true,
+      "queryManager": QueryManager {
+        "addTypename": true,
+        "deduplicator": Deduplicator {
+          "inFlightRequestPromises": Object {},
+          "networkInterface": HTTPFetchNetworkInterface {
+            "_afterwares": Array [],
+            "_middlewares": Array [],
+            "_opts": Object {},
+            "_uri": "http://:4000/graphql",
+          },
+        },
+        "fetchQueryPromises": Object {},
+        "fragmentMatcher": HeuristicFragmentMatcher {},
+        "idCounter": 1,
+        "lastRequestId": Object {},
+        "networkInterface": HTTPFetchNetworkInterface {
+          "_afterwares": Array [],
+          "_middlewares": Array [],
+          "_opts": Object {},
+          "_uri": "http://:4000/graphql",
+        },
+        "observableQueries": Object {},
+        "pollingTimers": Object {},
+        "queryDeduplication": true,
+        "queryDocuments": Object {},
+        "queryIdsByName": Object {},
+        "queryListeners": Object {},
+        "reducerConfig": Object {
+          "addTypename": true,
+          "customResolvers": undefined,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": [Function],
+        },
+        "reduxRootSelector": [Function],
+        "scheduler": QueryScheduler {
+          "inFlightQueries": Object {},
+          "intervalQueries": Object {},
+          "pollingTimers": Object {},
+          "queryManager": [Circular],
+          "registeredQueries": Object {},
+        },
+        "ssrMode": false,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+        },
+      },
+      "reducerConfig": Object {
+        "addTypename": true,
+        "customResolvers": undefined,
+        "dataIdFromObject": [Function],
+        "fragmentMatcher": [Function],
+      },
+      "resetStore": [Function],
+      "setStore": [Function],
+      "ssrMode": false,
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+      },
+      "version": "1.8.0",
+      "watchQuery": [Function],
+    }
+  }
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <AppCanvas
+    messenger={<Connect(MessengerView) />}
+  >
+    <ConnectedRouter
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "blank",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <div>
+        <Route
+          component={[Function]}
+          path="/"
+        />
+      </div>
+    </ConnectedRouter>
+  </AppCanvas>
+</ApolloProvider>
+`;

@@ -1,0 +1,11 @@
+parser: babel-eslint
+extends: airbnb
+env:
+  node: true
+  es6: true
+  jest: true
+plugins:
+  - import
+  - node
+settings:
+  import/resolver: webpack

@@ -1,0 +1,5 @@
+# Prevent host-generated files from being copied into the machine
+node_modules/
+build/
+__mocks__/
+__tests__/

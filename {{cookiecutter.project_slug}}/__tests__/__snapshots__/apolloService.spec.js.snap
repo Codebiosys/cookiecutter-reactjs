@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The apollo service renders 1`] = `
+ApolloClient {
+  "addTypename": true,
+  "dataId": [Function],
+  "dataIdFromObject": [Function],
+  "disableNetworkFetches": false,
+  "fieldWithArgs": [Function],
+  "fragmentMatcher": HeuristicFragmentMatcher {},
+  "initialState": Object {},
+  "middleware": [Function],
+  "mutate": [Function],
+  "networkInterface": HTTPFetchNetworkInterface {
+    "_afterwares": Array [],
+    "_middlewares": Array [],
+    "_opts": Object {},
+    "_uri": "http://:4000/graphql",
+  },
+  "query": [Function],
+  "queryDeduplication": true,
+  "reducerConfig": Object {
+    "addTypename": true,
+    "customResolvers": undefined,
+    "dataIdFromObject": [Function],
+    "fragmentMatcher": [Function],
+  },
+  "resetStore": [Function],
+  "setStore": [Function],
+  "ssrMode": false,
+  "version": "1.8.0",
+  "watchQuery": [Function],
+}
+`;

@@ -1,0 +1,45 @@
+#
+# Docker Compose file for quickly setting up a development environment and tools
+#
+
+version: "3"
+
+services:
+
+  #
+  # React client application that sources a GraphQL endpoint
+  #
+  app:
+    build: .
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - DEBUG=1
+    volumes:
+      - ./src/:/app/src
+      - ./build/:/app/build
+
+  #
+  # React client application that only runs tests to generate coverage files.
+  # Generaged files are stored in a mounted volume for serving via www service.
+  #
+  tests:
+    build: .
+    command: yarn run tests:watch
+    volumes:
+      - ./src/:/app/src
+      - ./build/:/app/build
+      - ./__mocks__:/app/__mocks___
+      - ./__tests__:/app/__tests___
+
+  #
+  # React client application that only runs documentation generation
+  # Generaged files are stored in a mounted volume for serving via www service.
+  #
+  docs:
+    build: .
+    command: yarn run docs:watch
+    volumes:
+      - ./src/:/app/src
+      - ./build/:/app/build

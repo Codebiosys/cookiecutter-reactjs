@@ -1,0 +1,14 @@
+{
+  "source": "./src",
+  "destination": "./build/docs",
+  "plugins": [
+    {
+      "name": "esdoc-standard-plugin",
+      "test": {
+        "source": "./__tests___"
+      }
+    },
+    {"name": "esdoc-react-plugin"},
+    {"name": "esdoc-jsx-plugin"}
+  ]
+}
