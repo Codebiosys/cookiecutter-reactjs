@@ -42,6 +42,7 @@ const config = {
 
     // Automcatically inject bundles into an HTML template
     new HtmlWebpackPlugin({
+      title: "{{cookiecutter.project_name}}",
       template: path.resolve(__dirname, "webpack.index.html"),
     }),
 

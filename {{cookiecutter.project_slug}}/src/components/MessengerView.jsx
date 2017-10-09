@@ -1,14 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Snackbar from "material-ui/Snackbar";
 
 const MessengerView = ({ show, message, clear }) => (
-  <Snackbar
-    open={show}
-    message={message}
-    autoHideDuration={3000}
-    onRequestClose={clear}
-  />
+  <div></div>
 );
 
 MessengerView.propTypes = {
